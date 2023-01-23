@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", normal;
+    background: #fafafa;
+}
+
+// Navbar
+nav {
+    z-index: 9999;
+    .row {
+        position: relative;
+        padding: 36px 64px;
+        .nav-left {
+            .navbar-brand {
+                img {
+                    max-height: 40px;
+                }
+            }
+        }
+        .nav-middle {
+            .nav-item {
+                a {
+                    color: #bbbdc3;
+                    &.active {
+                        color: white;
+                        border-bottom: solid 1px white;
+                        // border-width: 20px;
+                    }
+                }
+            }
+        }
+        .nav-right {
+            .nav-item {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        .nav-mobile {
+            position: absolute;
+            background-color: rgba($color: #b1b1b1, $alpha: 1);
+            top: 0;
+            right: 0;
+            width: 500px;
+            z-index: -1;
+            border-radius: 5px;
+
+            .navbar-nav {
+                padding-top: 50px;
+                .nav-item {
+                    width: max-content;
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// header
+header {
+    padding: 265px 0 290px;
+    background-image: url("../../images/header.jpg");
+    background-size: cover;
+    margin-top: -135px;
+    height: 90vh;
+
+    p {
+        color: #bbbdc3 !important;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    h1 {
+        color: #fff !important;
+        font-size: 52px;
+        font-weight: 700;
+    }
+}
+
+main {
+    margin-top: -8em;
+    .judul-status {
+        .flight-container {
+            padding: 16px 24px;
+            display: flex;
+            gap: 10px;
+            border-radius: 12px 0px 0px 0px;
+
+            p {
+                color: white;
+                font-weight: 500;
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+        .hotel-container {
+            padding: 16px 24px;
+            display: flex;
+            gap: 10px;
+            border-radius: 0px 12px 0px 0px;
+            background-color: white;
+
+            p {
+                color: black;
+                font-weight: 500;
+                font-size: 18px;
+                margin: 0;
+            }
+        }
+    }
+    .desc-status {
+        padding: 24px;
+        background-color: #fff;
+        gap: 20px;
+        background: #ffffff;
+        border-radius: 0px 30px 30px 30px;
+        align-items: center;
+        justify-content: space-evenly;
+        .status-penerbangan {
+            cursor: pointer;
+            padding: 24px;
+            border: 1.5px solid #f3f3f3;
+            border-radius: 16px;
+            display: flex;
+            gap: 10px;
+
+            span {
+                padding: 0 20px;
+                img {
+                    width: 20px;
+                    height: 42px;
+                }
+            }
+            .status {
+                p {
+                    margin: 0;
+                    &.tujuan {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .status-tgl {
+            cursor: pointer;
+            padding: 24px;
+            border: 1.5px solid #f3f3f3;
+            border-radius: 16px;
+            display: flex;
+            gap: 10px;
+            span {
+                img {
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+            .status {
+                p {
+                    margin: 0;
+                    &.tujuan {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        .type-penerbangan {
+            cursor: pointer;
+            padding: 24px;
+            border: 1.5px solid #f3f3f3;
+            border-radius: 16px;
+            display: flex;
+            gap: 10px;
+            span {
+                img {
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+            .status {
+                p {
+                    margin: 0;
+                    &.tujuan {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        button {
+            width: 101px;
+            height: 101px;
+            border: none;
+            border-radius: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 922px) {
+    nav {
+        .row {
+            padding: 10px 10px;
+        }
+    }
+    header {
+        padding: 265px 0 190px;
+        background-image: url("../../images/header.jpg");
+        background-size: cover;
+        // margin-top: -135px;
+        height: 100vh;
+
+        p {
+            color: #bbbdc3 !important;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        h1 {
+            color: #fff !important;
+            font-size: 27px;
+            font-weight: 700;
+        }
+    }
+    main {
+        margin-top: 0em;
+        .judul-status {
+            .flight-container {
+                padding: 16px 24px;
+                display: flex;
+                gap: 10px;
+                border-radius: 12px 0px 0px 0px;
+
+                p {
+                    color: white;
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin: 0;
+                }
+            }
+            .hotel-container {
+                padding: 16px 24px;
+                display: flex;
+                gap: 10px;
+                border-radius: 0px 12px 0px 0px;
+                background-color: white;
+
+                p {
+                    color: black;
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin: 0;
+                }
+            }
+        }
+        .desc-status {
+            padding: 24px;
+            background-color: #fff;
+            gap: 20px;
+            background: #ffffff;
+            border-radius: 0px 30px 30px 30px;
+            align-items: center;
+            justify-content: space-evenly;
+            .status-penerbangan {
+                cursor: pointer;
+                padding: 24px;
+                border: 1.5px solid #f3f3f3;
+                border-radius: 16px;
+                display: flex;
+                gap: 0px;
+
+                span {
+                    padding: 0 20px;
+                    img {
+                        width: 20px;
+                        height: 42px;
+                    }
+                }
+                .status {
+                    p {
+                        margin: 0;
+                        &.tujuan {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .status-tgl {
+                cursor: pointer;
+                padding: 24px;
+                border: 1.5px solid #f3f3f3;
+                border-radius: 16px;
+                display: flex;
+                gap: 10px;
+                span {
+                    img {
+                        width: 42px;
+                        height: 42px;
+                    }
+                }
+                .status {
+                    p {
+                        margin: 0;
+                        &.tujuan {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .type-penerbangan {
+                cursor: pointer;
+                padding: 24px;
+                border: 1.5px solid #f3f3f3;
+                border-radius: 16px;
+                display: flex;
+                gap: 10px;
+                span {
+                    img {
+                        width: 42px;
+                        height: 42px;
+                    }
+                }
+                .status {
+                    p {
+                        margin: 0;
+                        &.tujuan {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            button {
+                width: 101px;
+                height: 101px;
+                border: none;
+                border-radius: 16px;
+            }
+        }
+    }
+}
