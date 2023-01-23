@@ -48,7 +48,7 @@ nav .row .nav-mobile .navbar-nav .nav-item a {
 
 header {
   padding: 265px 0 290px;
-  background-image: url("../../images/header-c.svg");
+  background-image: url("../../images/header.jpg");
   background-size: cover;
   margin-top: -135px;
   height: 90vh;
@@ -171,7 +171,7 @@ main .desc-status button {
   }
   header {
     padding: 265px 0 190px;
-    background-image: url("../../images/header.jpg");
+    background-image: url("../../images/header-c.svg");
     background-size: cover;
     height: 100vh;
   }
